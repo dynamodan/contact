@@ -1070,6 +1070,9 @@ def draw_packetlog_win() -> None:
             # Add to the window
             packetlog_win.addstr(i + 2, 1, logString, get_color("log"))
 
+            # write to log path so we can go back later and see:
+            logging.info(logString)
+
         paint_frame(packetlog_win, selected=False)
 
     # Restore cursor to input field

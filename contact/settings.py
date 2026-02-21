@@ -73,7 +73,7 @@ def ensure_min_rows(stdscr: curses.window, min_rows: int = 11) -> None:
 
 logging.basicConfig(  # Run `tail -f client.log` in another terminal to view live
     filename=config.log_file_path,
-    level=logging.WARNING,  # DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    level=logging.INFO,  # DEBUG, INFO, WARNING, ERROR, CRITICAL)
     format="%(asctime)s - %(levelname)s - %(message)s",
 )
 
